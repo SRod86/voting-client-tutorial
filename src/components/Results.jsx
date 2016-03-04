@@ -18,7 +18,7 @@ export const Results = React.createClass({
     return this.props.winner ?
     <Winner ref="winner" winner={this.props.winner} /> :
     <div className="results">
-      <div>
+      <div className="tally">
         {this.getPair().map(entry =>
           <div key={entry} className="entry">
             <h1>{entry}</h1>

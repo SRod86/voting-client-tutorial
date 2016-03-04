@@ -1,9 +1,13 @@
-import React from 'react/addons';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {
+  renderIntoDocument,
+  scryRenderedDOMComponentsWithTag,
+  Simulate
+} from 'react-addons-test-utils';
 import {List} from 'immutable';
 import {Voting} from '../../src/components/Voting';
 import {expect} from 'chai';
-
-const {renderIntoDocument, scryRenderedDOMComponentsWithTag, Simulate} = React.addons.TestUtils;
 
 describe('Voting', () => {
   it('renders a pair of buttons', () => {
